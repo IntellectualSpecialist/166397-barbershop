@@ -1,3 +1,9 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: PT Sans Narrow, Arial, Sans-serif;
   font-size: 14px;
@@ -17,4 +23,181 @@ h2 {
   font-size: 24px;
   line-height: 30px;
   color: #000000;
+}
+
+.container {
+  outline: 2px solid red;
+  margin: 0 auto;
+  width: 940px;
+  padding: 0 10px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  outline: 2px solid green;
+  margin-bottom: 60px;
+}
+
+.main-header .main-navigation {
+  float: left;
+  outline: 2px solid yellow;
+  background-color: rgba(255, 255, 0, 0.5);
+  width: 780px;
+    /* Только для оформления сетки */
+  min-height: 70px;
+}
+
+.main-header .user-block {
+  float: right;
+  outline: 2px solid yellow;
+  background-color: rgba(255, 255, 0, 0.5);
+  width: 140px;
+    /* Только для оформления сетки */
+  min-height: 70px;
+}
+
+.main-logo {
+  width: 368px;
+  height: 204px;
+  margin: 0 auto;
+  outline: 2px solid yellow;
+  background-color: rgba(255, 255, 0, 0.5);
+  margin-bottom: 25px;
+}
+
+.features {
+  margin-bottom: 80px;
+}
+
+.features .item {
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+  outline: 2px solid yellow;
+  background-color: rgba(255, 255, 0, 0.5);
+    /* Только для оформления сетки */
+  min-height: 175px;
+}
+
+.features .item:last-child {
+  margin-right: 0;
+}
+
+.index-content {
+  padding: 50px 80px;
+  margin-bottom: 35px;
+}
+
+.index-content .left {
+  float: left;
+  width: 380px;
+  outline: 2px solid yellow;
+  background-color: rgba(255, 255, 0, 0.5);
+    /* Только для оформления сетки */
+  min-height: 330px;
+}
+
+.index-content .right {
+  float: right;
+  width: 300px;
+  outline: 2px solid yellow;
+  background-color: rgba(255, 255, 0, 0.5);
+    /* Только для оформления сетки */
+  min-height: 330px;
+}
+
+.main-footer {
+  outline: 2px solid green;
+  margin-top: 65px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.main-footer .contact {
+  outline: 2px solid yellow;
+  background-color: rgba(255, 255, 0, 0.5);
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+  /* Только для оформления сетки */
+  min-height: 90px;
+}
+
+.main-footer .social {
+  outline: 2px solid yellow;
+  background-color: rgba(255, 255, 0, 0.5);
+  float: left;
+  width: 180px;
+  /* Только для оформления сетки */
+  min-height: 90px;
+}
+
+.main-footer .copyright {
+  outline: 2px solid yellow;
+  background-color: rgba(255, 255, 0, 0.5);
+  float: right;
+  width: 180px;
+  /* Только для оформления сетки */
+  min-height: 90px;
+}
+
+/*catalog*/
+.index-logo {
+  float: left;
+  width: 140px;
+}
+
+.breadcrumbs {
+  margin-bottom: 35px;
+}
+
+.filters {
+  outline: 2px solid yellow;
+  background-color: rgba(255, 255, 0, 0.5);
+  float: left;
+  width: 220px;
+  min-height: 593px;
+}
+
+.items {
+  float: right;
+  width: 700px;
+  outline: 2px solid yellow;
+  background-color: rgba(255, 255, 0, 0.5);
+  margin-bottom: 25px;
+}
+
+.items .item-block {
+  float: left;
+  margin-right: 20px;
+  width: 220px;
+  margin-bottom: 50px;
+  outline: 2px solid blue;
+}
+
+.items .item-block:nth-child(3n) {
+  margin-right: 0;
+}
+
+.paginator {
+  float: left;
+  margin-top: 25px;
+}
+
+
+/*catalog-item*/
+.item-description .gallery {
+  width: 450px;
+  float: left;
+  /*height: 670px;*/
+}
+
+.item-description .about {
+  width: 400px;
+  float: right;
 }
