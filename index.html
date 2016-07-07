@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic,latin" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -15,7 +17,7 @@
           <ul class="main-menu">
             <li><a href="#">Информация</a></li>
             <li><a href="#">Новости</a></li>
-            <li><a href="#">Прайс-лист</a></li>
+            <li><a href="price.html">Прайс-лист</a></li>
             <li><a href="catalog.html">Магазин</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
@@ -27,29 +29,29 @@
     </header>
 
     <main class="container">
-      <div class="main-logo">
+      <div class="index-logo">
         <img src="img/logo.png" width="368" height="204" alt="Барбершоп «Бородинский»">
       </div>
 
       <section class="features clearfix">
-        <div class="item">
-          <div class="title">Быстро</div>
+        <div class="features-item">
+          <div class="features-title">Быстро</div>
           <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
         </div>
-        <div class="item">
-          <div class="title">Круто</div>
+        <div class="features-item">
+          <div class="features-title">Круто</div>
           <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
         </div>
-        <div class="item">
-          <div class="title">Дорого</div>
+        <div class="features-item">
+          <div class="features-title">Дорого</div>
           <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
         </div>
       </section>
 
       <div class="index-content clearfix">
-        <div class="left">
-          <h2 class="title">Новости</h2>
-          <ul class="news">
+        <div class="index-content-left">
+          <h2 class="index-content-title">Новости</h2>
+          <ul class="news-preview">
             <li>
               <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
               <time datetime="2016-01-11">11 января</time>
@@ -58,27 +60,27 @@
               <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
               <time datetime="2016-01-18">18 января</time>
             </li>
-            <a class="btn" href="#">Все новости</a>
           </ul>
+          <a class="btn" href="#">Все новости</a>
         </div>
 
-        <div class="right">
-          <h2 class="title">Фотогалерея</h2>
+        <div class="index-content-right">
+          <h2 class="index-content-title">Фотогалерея</h2>
           <div class="gallery">
-            <a class="content">
+            <a class="gallery-content">
               <img src="img/gallery-photo.jpg" width="286" height="164" alt="">
             </a>
             <div class="navigation">
-              <button class="btn prev" type="button">Назад</button>
-              <button class="btn next" type="button">Вперед</button>
+              <button class="btn gallery-prev" type="button">Назад</button>
+              <button class="btn gallery-next" type="button">Вперед</button>
             </div>
           </div>
         </div>
       </div>
 
       <div class="index-content clearfix">
-        <div class="left">
-          <h2>Контактная информация</h2>
+        <div class="index-content-left">
+          <h2 class="index-content-title">Контактная информация</h2>
           <div class="info">
             <p>
               Барбершоп «Бородинский»<br>
@@ -98,15 +100,15 @@
           </div>
         </div>
 
-        <div class="right">
-          <h2 class="title">Записаться</h2>
+        <div class="index-content-right">
+          <h2 class="index-content-title">Записаться</h2>
             <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
             <form class="registration" action="/echo" method="post">
-              <input type="text" name="date" placeholder="Дата">
-              <input type="text" name="time" placeholder="Время">
-              <input type="text" name="name" placeholder="Ваше имя">
+              <input type="text" name="date" value="" placeholder="Дата">
+              <input type="text" name="time" value="" placeholder="Время">
+              <input type="text" name="name" value="" placeholder="Ваше имя">
               <input type="tel" name="tel" placeholder="Телефон">
-              <button type="submit">Отправить</button>
+              <button class="btn" type="submit">Отправить</button>
           </form>
         </div>
       </div>
@@ -114,7 +116,7 @@
 
     <footer class="main-footer">
       <div class="container clearfix">
-        <div class="contact">
+        <div class="footer-contact">
           <p>
             Барбершоп «Бородинский»<br>
             Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
@@ -123,13 +125,14 @@
           </p>
         </div>
 
-        <div class="social">
-          <a class="btn twitter" href="#">Твиттер</a>
-          <a class="btn facebook" href="#">Фейсбук</a>
-          <a class="btn instagram" href="#">Инстаграмм</a>
+        <div class="footer-social">
+          <p>Давайте дружить!</p>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграмм</a>
         </div>
 
-        <div class="copyright">
+        <div class="footer-copyright">
           <p>Разработанно: </p>
           <a class="btn" href="#">Htmlacademy.ru</a>
         </div>
